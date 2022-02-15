@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparisons</title>
+</head>
+<body>
+    <a href="../index.html">Back to index</a>
+    <p>Check devtools console.</p>
+    <pre>
+        <code>
+        const original = 'korey';
+        const clone = 'KOREY';
+
+
+        console.groupCollapsed('String');
+            console.log(original == 'korey'); // true
+            console.log(original == clone); // false
+            console.log(original == clone.toLowerCase()); // true
+        console.groupEnd();
+
+        const num1 = 10;
+        const num2 = '10';
+
+        console.groupCollapsed('Number');
+            console.log(num1 == num2); // true
+            console.log(num1 === num2); // false
+            console.log(num1 != num2); // false
+            console.log(num1 !== num2); // true
+        console.groupEnd();
+
+        let what; // undefined
+        let thing = null;
+
+        console.groupCollapsed('Booleans');
+            console.log(Boolean(original)); // true
+            console.log(Boolean(what)); // false
+            console.log(Boolean(thing)); // false 
+            console.log(Boolean(num1)); // true
+            console.log(Boolean(num2)); // true
+            console.log(Boolean({})); // true - empty object and array are truthy
+            console.log(Boolean([])); // true - empty object and array are truthy
+        console.groupEnd();
+
+        const firstArr = [1, 2, 3];
+        const secondArr = [1, 2, 3];
+        const firstObj = { color: "red" };
+        const secondObj = { color: "red "};
+
+        console.groupCollapsed('Objects and Arrays');
+            console.log(firstArr == secondArr);
+            console.log(firstObj == secondObj);
+        console.groupEnd();
+
+
+        console.groupCollapsed('And Or');
+            console.log(Boolean('blah') && Boolean('thing'));
+            console.log(Boolean('blah') && Boolean(''));
+            console.log(Boolean('blah') || Boolean(''));
+            console.log(Boolean('') || Boolean(''));
+        console.groupEnd();
+        </code>
+    </pre>
+    <script>
+        const original = 'korey';
+        const clone = 'KOREY';
+
+
+        console.groupCollapsed('String');
+            console.log(original == 'korey'); // true
+            console.log(original == clone); // false
+            console.log(original == clone.toLowerCase()); // true
+        console.groupEnd();
+
+        const num1 = 10;
+        const num2 = '10';
+
+        console.groupCollapsed('Number');
+            console.log(num1 == num2); // true
+            console.log(num1 === num2); // false
+            console.log(num1 != num2); // false
+            console.log(num1 !== num2); // true
+        console.groupEnd();
+
+        let what; // undefined
+        let thing = null;
+
+        console.groupCollapsed('Booleans');
+            console.log(Boolean(original)); // true
+            console.log(Boolean(what)); // false
+            console.log(Boolean(thing)); // false 
+            console.log(Boolean(num1)); // true
+            console.log(Boolean(num2)); // true
+            console.log(Boolean({})); // true - empty object and array are truthy
+            console.log(Boolean([])); // true - empty object and array are truthy
+        console.groupEnd();
+
+        const firstArr = [1, 2, 3];
+        const secondArr = [1, 2, 3];
+        const firstObj = { color: "red" };
+        const secondObj = { color: "red "};
+
+        console.groupCollapsed('Objects and Arrays');
+            console.log(firstArr == secondArr);
+            console.log(firstObj == secondObj);
+        console.groupEnd();
+
+
+        console.groupCollapsed('And Or');
+            console.log(Boolean('blah') && Boolean('thing'));
+            console.log(Boolean('blah') && Boolean(''));
+            console.log(Boolean('blah') || Boolean(''));
+            console.log(Boolean('') || Boolean(''));
+        console.groupEnd();
+    </script>
+</body>
+</html>
