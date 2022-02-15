@@ -8,6 +8,7 @@
 </head>
 <body>
     <a href="../index.html">Back to index</a>
+    <div class="dogs-list"></div>
     <p>Check devtools console.</p>
     <pre>
         <code>
@@ -15,15 +16,32 @@
         </code>
     </pre>
     <script>
-        const name = 'korey';
-        const username = 'kandrus';
+        // const name = 'korey';
+        // const username = 'kandrus';
 
-        // if
-        if(name == 'korey'){
-            console.log('Name is korey');
-        } else {
-            console.log('name isn\'t korey');
+        // // if
+        // if(name == 'korey'){
+        //     console.log('Name is korey');
+        // } else {
+        //     console.log('name isn\'t korey');
+        // }
+
+        const dogsList = document.querySelector('.dogs-list');
+        const dogs = [
+            { name: 'bruce', type: 'chihuahua' },
+            { name: 'chance', type: 'husky' }
+        ];
+
+        // for loop
+        for(let i = 0; i < dogs.length; i++) {
+            // grab dog
+            const dog = dogs[i];
+
+            const dogData = document.createElement('div');
+            
         }
+
+
     </script>
 </body>
 </html>
