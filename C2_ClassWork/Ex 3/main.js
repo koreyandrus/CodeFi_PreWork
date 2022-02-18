@@ -18,13 +18,17 @@
 // - Notice that num included in the returned array.
 
 function arrayOfMultiples(num, length){
+    //create empty array
     let arr = [];
+    // hold onto original value
     let orgNum = num;
 
+    // loop through length and add nums to array
     for(let i = 0;i < length;i++){
         arr.push(num);
         num += orgNum;
     }
+    // return the finished array
     return arr;
 }
 
