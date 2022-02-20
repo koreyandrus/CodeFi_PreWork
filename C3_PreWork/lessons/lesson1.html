@@ -4,14 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Functions</title>
 </head>
 <body>
     <a href="../index.html">Back to index</a>
+    <div class="jumbotron text-center">
+        <button type="button" class="btn btn-danger" onclick="saySomething('this is the first button')">My Button</button>
+        <button type="button" class="btn btn-danger" onclick="saySomething('this is the second button')">My 2nd Button</button>
+    </div>
+
     <p>Check devtools console.</p>
  
     <script>
-  
+        function saySomething(message = 'goodbye', whisper = false) {
+            if(whisper) {
+                console.log(`%c${message}`, 'font-size:5px');
+            } else {
+                console.log(message);
+            }
+        }
+
+        saySomething('hello', true);
+        saySomething("My name is Korey", true);
+        saySomething();
+
+        // function squared(a){
+        //     return a * a;
+        // }
+
+        // const newSquared = squared(3);
+        // console.log(newSquared);
+        
+        // const squared = function(a){
+        //     return a * a;
+        // }
+
+        const squared = (a) => {
+            return a * a;
+        }
+
+
     </script>
 </body>
 </html>
