@@ -19,4 +19,6 @@ function sortObj(obj) {
     }, {});
   }
 
+
+
   splitObj(obj2);
