@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    width: 70%;
     margin: 0 auto;
     background-color: #F7FCDD;
 }
@@ -16,23 +15,29 @@ body {
     min-width: 100%;
     background-color: #F7FCDD;
 }
+
 .back {
-    margin-top: 10px;
+    margin-top: 1.75em;
 }
+
 
 h1 {
     background-color: #F7FCDD;
     color: #477998;
     width: 100%;
     text-align: center;
+    font-size: 2.5rem;
     padding: 15px;
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 h2 {
+    font-size: 2rem;
+    padding-top: 2rem;
     color: #477998;
 }
+
 
 
 li {
