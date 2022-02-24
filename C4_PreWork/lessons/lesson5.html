@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordian</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="./lesson5.js" defer></script>
+    <style>
+        body, .jumbotron { padding: 30px; }
+        body {
+            background: #EFEFEF;
+        }
+        html {
+            overflow-y: auto;
+            overflow-y: overlay;
+        }
+        ul {
+            margin-bottom: 0;
+        }
+        .accordian {
+            background: #FFF;
+            border-radius: 5px;
+            padding: 30px;
+        }
+        .question {
+            border-top: 1px solid #EEE;
+            padding: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+        .first-question {
+            border: none;
+        }
+        .question h2 {
+            font-size: 20px;
+            margin: 0;
+            color: #C00C00;
+        }
+        .question i {
+            color: #C00C00;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+        }
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+        }
+        .answer p {
+            padding: 20px;
+        }
+        .accordian li.open .question i {
+            transform: rotate(180deg);
+        }
+        .accordian li.open .answer {
+            max-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="accordian">
+            <ul class="list-unstyled">
+                <li>
+                    <div class="question first-question">
+                        <h2>Will I Be Rich?</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Absolutely! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ab nam sapiente ex sint eligendi quos minus! Eveniet voluptatem natus ullam eaque aliquam architecto repudiandae odio exercitationem dignissimos reiciendis dolore voluptas modi temporibus ab, ut autem repellendus eius pariatur sint quidem aperiam ipsum ratione saepe quibusdam. Dolorem fugit consequuntur doloribus?</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+                        <h2>Is JavaScript awesome?</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Fo Sho! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ab nam sapiente ex sint eligendi quos minus! Eveniet voluptatem natus ullam eaque aliquam architecto repudiandae odio exercitationem dignissimos reiciendis dolore voluptas modi temporibus ab, ut autem repellendus eius pariatur sint quidem aperiam ipsum ratione saepe quibusdam. Dolorem fugit consequuntur doloribus?</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="question">
+                        <h2>Whats for dinner?</h2>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        <p>Tacos, amigo! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero ab nam sapiente ex sint eligendi quos minus! Eveniet voluptatem natus ullam eaque aliquam architecto repudiandae odio exercitationem dignissimos reiciendis dolore voluptas modi temporibus ab, ut autem repellendus eius pariatur sint quidem aperiam ipsum ratione saepe quibusdam. Dolorem fugit consequuntur doloribus?</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
