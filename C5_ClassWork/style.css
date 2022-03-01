@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.user-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-form input {
+    margin: 10px 0;
+    /* border: 1px solid black; */
+    /* border-radius: 5px; */
+}
+
+.user-form button {
+    margin: 10px 0;
+    /* padding: 2em; */
+    width: 50%;
+}
