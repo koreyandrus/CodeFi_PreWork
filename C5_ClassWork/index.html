@@ -9,16 +9,11 @@
 </head>
 <body>
     <main class="container">
-        <h1>Get and store user information</h1>
+        <h1>Store and Pull from local storage</h1>
         <form class="user-form">
-            <label for="first-name">First Name</label>
-            <input type="text" class="first-name" name="first-name">
-            <label for="last-name">Last Name</label>
-            <input type="text" class="last-name" name="last-name">
-            <label for="age">Age</label>
-            <input type="number" class="age" name="age">
-            <label for="email">Email</label>
-            <input type="email" class="email" name="email">
+            <input type="text" class="first-name" name="first-name" placeholder="First Name" required>
+            <input type="text" class="last-name" name="last-name" placeholder="Last Name" required />
+            <input type="email" class="email" name="email" placeholder="Email" required />
             <button class="submit-btn" type="submit">Add Data</button>
         </form>
         <div class="user-info"></div>
