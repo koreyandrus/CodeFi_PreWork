@@ -1,27 +1,110 @@
-h1 {
-    text-align: center;
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
 }
 
 .container {
-    margin: 0 auto;
     max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
 }
 
-.user-form {
+
+h1 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+input[type=text],
+input[type=email] {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
 }
 
-.user-form input {
-    margin: 10px 0;
-    /* border: 1px solid black; */
-    /* border-radius: 5px; */
+input[type=text]:focus-visible,
+input[type=email]:focus-visible {
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.10);
 }
 
-.user-form button {
-    margin: 10px 0;
-    /* padding: 2em; */
-    width: 50%;
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    padding:10px;
+    margin-top: 10px;
+    border:none;
+    background-color:#3F51B5;
+    color: #eee;
+    font-weight:600;
+    border-radius:5px;
+    width:100%;
+}
+
+button:hover,
+button:focus {
+    background-color:#293996;
+    color:#fff;
+}
+
+.user-info {
+    text-align: left;
+}
+
+.user-info ul {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 0;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.user-info li {
+    list-style: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    font-size: 1.3rem;
+    padding: 2px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+}
+
+.close-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.edit-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+
+    font-size: .9rem;
+    padding: 2px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) all;
+}
+
+.edit-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
 }
