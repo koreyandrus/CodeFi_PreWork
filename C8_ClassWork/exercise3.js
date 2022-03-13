@@ -37,8 +37,8 @@
 
 function interview(arr, tot) {
     const benchmark = [5, 5, 10, 10, 15, 15, 20, 20, 120];
+
     const performance = [...arr, tot];
-    console.log(performance);
 
     return performance.every((num, index) => num <= benchmark[index]) ? "qualified" : "disqualified";
 }
@@ -48,7 +48,7 @@ console.log(interview([5, 5, 10, 10, 15, 15, 20, 20], 120)); //   ➞    "qualif
 
 console.log(interview([2, 3, 8, 6, 5, 12, 10, 18], 64)); //    ➞     "qualified" 👍
 
-console.log(interview([6, 4, 5, 6, 10, 12, 10, 18], 115)); //    ➞     "disqualified" 
+console.log(interview([6, 4, 5, 6, 10, 12, 10, 18], 115)); //    ➞     "disqualified" 👍 
 // Should be disqualified because went over very easy time
 
 console.log(interview([5, 5, 10, 10, 25, 15, 20, 20], 120)); //    ➞    "disqualified" 👍
