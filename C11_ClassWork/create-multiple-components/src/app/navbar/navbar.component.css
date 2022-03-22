@@ -1,0 +1,19 @@
+:host {
+  background: blue;
+}
+
+nav{
+  position: fixed;
+  width: 30%;
+  right: 0;
+  margin-right: 2rem;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
