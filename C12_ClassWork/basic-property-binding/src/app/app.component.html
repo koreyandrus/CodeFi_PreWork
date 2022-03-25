@@ -1,0 +1,10 @@
+<input type="text" [disabled]="isDisabled">
+<label for="disable">Disabled</label>
+<input type="checkbox" name="disable" [(ngModel)]="isDisabled">
+
+
+<div [ngClass]="isEmpty === true ? 'emptyBox' : 'box'">
+  <p>I am box number {{ boxNumber }}.</p>
+  <p>I am
+    <span [ngStyle]="{ color: getColor() }"> {{ isEmpty ? "empty" : "full" }} </span></p>
+</div>
