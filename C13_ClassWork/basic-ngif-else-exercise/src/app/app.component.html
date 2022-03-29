@@ -1,0 +1,3 @@
+<button type="button" (click)="isShowContent = !isShowContent">Toggle Content</button>
+<p *ngIf="isShowContent;else dontShow">If isShowContent is true, show me!</p>
+<ng-template #dontShow><p>Use else to show me!</p></ng-template>

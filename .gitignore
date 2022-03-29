@@ -32,6 +32,7 @@ e2e/*.map
 # VS Code
 **/.vscode/
 
+$HOME
 
 # System Files
 .DS_Store/

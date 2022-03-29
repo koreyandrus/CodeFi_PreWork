@@ -1,0 +1,2 @@
+<input type="text" [value]="changeColor" (input)="changeColor = $event.target.value">
+<p [ngStyle]="{'background-color': changeColor}">This is the string with dynamic style!</p>
