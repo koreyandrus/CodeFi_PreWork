@@ -29,6 +29,10 @@ typings/
 e2e/*.js
 e2e/*.map
 
+# VS Code
+**/.vscode/
+
+
 # System Files
 .DS_Store/
 
