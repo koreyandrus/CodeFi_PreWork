@@ -1,0 +1,8 @@
+<div class="container">
+  <label for="foor-input">Enter Foods</label>
+  <input type="text" id="food-input" [value]="food" (input)="food = $event.target.value" >
+  <button type="button" (click)="addFood()" >Submit</button>
+  <ul class="food-list" *ngFor="let food of foods">
+    <li>{{ food }}</li>
+  </ul>
+</div>
