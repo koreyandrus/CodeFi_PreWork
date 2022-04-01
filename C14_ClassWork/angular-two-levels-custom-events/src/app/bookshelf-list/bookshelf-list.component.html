@@ -1,0 +1,3 @@
+<div *ngFor="let book of books">
+  <p (click)="sendBook()"><span style="cursor: pointer;">{{ book.title }}</span> by <span style="cursor: pointer;">{{ book.author }}</span></p>
+</div>
