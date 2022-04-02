@@ -8,7 +8,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class BookshelfListComponent implements OnInit {
   books: {title: string, author: string}[] = [
     {title: 'The Hobbit', author: 'Tolkien'},
-    {title: 'Life of Pi', author: 'Yann Martel'}
+    {title: 'Life of Pi', author: 'Yann Martel'},
+    {title: 'HTML and CSS', author: 'John Duckett'},
   ]
 
   @Output() bookEvent = new EventEmitter<{title: string, author: string}>();
@@ -18,8 +19,8 @@ export class BookshelfListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  sendBook(book){
-    this.bookEvent.emit(book)
+  sendBook($event){
+    this.bookEvent.emit($event)
   }
 
 }

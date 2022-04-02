@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-two-levels-custom-events';
+  book: {title: string, author: string};
+  output : string;
+  onReceiveBook($event) {
+    // this.book = $event;
+    this.output = $event.title + " by " + $event.author;
+  }
 }
